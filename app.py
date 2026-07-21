@@ -3,7 +3,6 @@
 
 import streamlit as st
 
-
 st.title("RAG Chatbot")
 
 question = st.text_input("Deine Frage")
