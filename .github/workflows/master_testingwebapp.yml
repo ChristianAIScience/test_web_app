@@ -35,19 +35,19 @@ jobs:
       # - name: Tests
       #   run: uv run pytest
 
-      - name: Deployment-Artefakt hochladen
-        uses: actions/upload-artifact@v4
-        with:
-          name: python-app
-          path: |
-            .
-            !.git/
-            !.github/
-            !.venv/
-            !__pycache__/
-            !.pytest_cache/
-            !antenv/
-          retention-days: 1
+      # - name: Deployment-Artefakt hochladen
+      #   uses: actions/upload-artifact@v4
+      #   with:
+      #     name: python-app
+      #     path: |
+      #       .
+      #       !.git/
+      #       !.github/
+      #       !.venv/
+      #       !__pycache__/
+      #       !.pytest_cache/
+      #       !antenv/
+      #     retention-days: 1
 
   deploy:
     runs-on: ubuntu-latest
